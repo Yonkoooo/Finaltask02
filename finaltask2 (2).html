@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #number-display {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 5px 50px; 
+    }
+    #increment-btn, #decrement-btn {
+      display: inline-block;
+    }
+    #shipping-box {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 5px 20px;
+    }
+    #container {
+      border: 1px solid black;
+      padding: 10px;
+      width: 400px;
+    }
+    #order-summary {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    #order-summary ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    #order-summary li {
+      margin-bottom: 5px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="product">
+      Basketball Products:
+      <div style="display: inline-block;">
+        <div id="number-display">0</div>
+        <button id="increment-btn">+</button>
+        <button id="decrement-btn">-</button>
+      </div>
+      <br>
+      <br>
+      Shipping and Handling Fee:
+      <div id="shipping-box">
+        $4.99
+      </div>
+    </div>
+
+    <div id="order-summary">
+        Order summary<br>
+     Items (<span id="item-count">0</span>)  $<span id="item-cost">0.00</span><br>
+         Shipping and Handling: $<span id="shipping-fee">4.99</span><br>
+        Total Before Tax: $<span id="total-cost">0.00</span><br>
+        Estimated Tax (10%): $<span id="tax-amount">0.00</span><br>
+        Order Total: $<span id="order-total">0.00</span><br>
+      </div>
+      
+      
+  </div>
+    
+  <script src="basketball.js"></script>
+</body>
+</html>
